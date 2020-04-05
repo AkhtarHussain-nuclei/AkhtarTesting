@@ -1,0 +1,9 @@
+-------------------------------------------------------------------------------
+Test set: PlivoApiAutomation.RunCucumberTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 1.36 sec <<< FAILURE!
+TC001-Create New Slack Channels with valid details(Create a new Slack Channel)  Time elapsed: 0.876 sec  <<< ERROR!
+java.lang.NullPointerException
+	at PlivoApiAutomation.StepDefinitions.verify_status_code(StepDefinitions.java:66)
+	at ?.the status code is 200(file:///Users/Akhtar/AutomationPlivo/PlivoApiAutomation/./src/test/resources/Features/CreateNewChannel.feature:8)
+

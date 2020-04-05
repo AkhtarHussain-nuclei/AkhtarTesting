@@ -1,0 +1,146 @@
+{
+
+  "type": "object",
+  "required": [
+    "ok",
+    "channel"
+  ],
+  "properties": {
+    "ok": {
+      "type": "boolean"
+    },
+    "channel": {
+      "type": "object",
+      "required": [
+        "id",
+        "name",
+        "is_channel",
+        "created",
+        "is_archived",
+        "is_general",
+        "unlinked",
+        "creator",
+        "name_normalized",
+        "is_shared",
+        "is_org_shared",
+        "is_member",
+        "is_private",
+        "is_mpim",
+        "last_read",
+        "latest",
+        "unread_count",
+        "unread_count_display",
+        "members",
+        "topic",
+        "purpose",
+        "previous_names",
+        "priority"
+      ],
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "is_channel": {
+          "type": "boolean"
+        },
+        "created": {
+          "type": "integer"
+        },
+        "is_archived": {
+          "type": "boolean"
+        },
+        "is_general": {
+          "type": "boolean"
+        },
+        "unlinked": {
+          "type": "integer"
+        },
+        "creator": {
+          "type": "string"
+        },
+        "name_normalized": {
+          "type": "string"
+        },
+        "is_shared": {
+          "type": "boolean"
+        },
+        "is_org_shared": {
+          "type": "boolean"
+        },
+        "is_member": {
+          "type": "boolean"
+        },
+        "is_private": {
+          "type": "boolean"
+        },
+        "is_mpim": {
+          "type": "boolean"
+        },
+        "last_read": {
+          "type": "string"
+        },
+        "latest": {
+        },
+        "unread_count": {
+          "type": "integer"
+        },
+        "unread_count_display": {
+          "type": "integer"
+        },
+        "members": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "topic": {
+          "type": "object",
+          "required": [
+            "value",
+            "creator",
+            "last_set"
+          ],
+          "properties": {
+            "value": {
+              "type": "string"
+            },
+            "creator": {
+              "type": "string"
+            },
+            "last_set": {
+              "type": "integer"
+            }
+          }
+        },
+        "purpose": {
+          "type": "object",
+          "required": [
+            "value",
+            "creator",
+            "last_set"
+          ],
+          "properties": {
+            "value": {
+              "type": "string"
+            },
+            "creator": {
+              "type": "string"
+            },
+            "last_set": {
+              "type": "integer"
+            }
+          }
+        },
+        "previous_names": {
+          "type": "array"
+        },
+        "priority": {
+          "type": "integer"
+        }
+      }
+    }
+  }
+}

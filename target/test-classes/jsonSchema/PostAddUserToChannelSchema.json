@@ -1,0 +1,130 @@
+{
+  "type": "object",
+  "required": [
+    "ok",
+    "channel",
+    "already_in_channel"
+  ],
+  "properties": {
+    "ok": {
+      "type": "boolean"
+    },
+    "channel": {
+      "type": "object",
+      "required": [
+        "id",
+        "name",
+        "is_channel",
+        "created",
+        "is_archived",
+        "is_general",
+        "unlinked",
+        "creator",
+        "name_normalized",
+        "is_shared",
+        "is_org_shared",
+        "is_member",
+        "is_private",
+        "is_mpim",
+        "members",
+        "topic",
+        "purpose",
+        "previous_names"
+      ],
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "is_channel": {
+          "type": "boolean"
+        },
+        "created": {
+          "type": "integer"
+        },
+        "is_archived": {
+          "type": "boolean"
+        },
+        "is_general": {
+          "type": "boolean"
+        },
+        "unlinked": {
+          "type": "integer"
+        },
+        "creator": {
+          "type": "string"
+        },
+        "name_normalized": {
+          "type": "string"
+        },
+        "is_shared": {
+          "type": "boolean"
+        },
+        "is_org_shared": {
+          "type": "boolean"
+        },
+        "is_member": {
+          "type": "boolean"
+        },
+        "is_private": {
+          "type": "boolean"
+        },
+        "is_mpim": {
+          "type": "boolean"
+        },
+        "members": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "topic": {
+          "type": "object",
+          "required": [
+            "value",
+            "creator",
+            "last_set"
+          ],
+          "properties": {
+            "value": {
+              "type": "string"
+            },
+            "creator": {
+              "type": "string"
+            },
+            "last_set": {
+              "type": "integer"
+            }
+          }
+        },
+        "purpose": {
+          "type": "object",
+          "required": [
+            "value",
+            "creator",
+            "last_set"
+          ],
+          "properties": {
+            "value": {
+              "type": "string"
+            },
+            "creator": {
+              "type": "string"
+            },
+            "last_set": {
+              "type": "integer"
+            }
+          }
+        },
+        "previous_names": {
+          "type": "array"
+        }
+      }
+    },
+    "already_in_channel": {
+      "type": "boolean"
+    }
+  }
+}
